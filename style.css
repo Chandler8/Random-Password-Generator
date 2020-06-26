@@ -72,11 +72,9 @@ body {
  
   .btn {
     border: none;
-    background-color: hsl(360, 91%, 36%);
+    background-color: crimson;
     border-radius: 25px;
-    box-shadow: rgba(0, 0, 0, 0.1) 0px 1px 6px 0px rgba(0, 0, 0, 0.2) 0px 1px 1px
-      0px;
-    color: hsl(0, 0%, 100%);
+    color: white;
     display: inline-block;
     font-size: 22px;
     line-height: 22px;
@@ -91,7 +89,23 @@ body {
     background: #c0c7cf;
   }
   
-  .float-right {
-    float: right;
+  /* This affects the appearence of the genertor box */
+  
+  #outcome {
+  
+    width: 100%;
+    text-align: center;
+    font-size: 1.2rem;
+    padding-top: 15px;
+    padding-left: 15px;
+    padding-right: 15px;
+    padding-bottom: 85px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    overflow: hidden;
+    border: 2px dashed #c0c7cf;
+    border-radius: 6px;
+    resize: none;
+    
   }
   
