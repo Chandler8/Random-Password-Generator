@@ -74,3 +74,4 @@ function writePassword() {
   results.textContent = password.join("");
 
 }
+// End of the password function

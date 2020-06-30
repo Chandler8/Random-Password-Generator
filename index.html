@@ -1,74 +1,70 @@
-  
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-    <title>Random Password Generator</title>
-    <link rel="stylesheet" href="style.css" />
-  </head>
-  <body>
-     
 
-    <!-- This chunk of the body will encompass the majority of the generator selection criteria aesthetic -->
-   
-      <div class="wrapper">
-        <header>
-          <h1>Password Generator</h1>
-        </header>
-        <div class="card">
-          <div class="card-header">
-            <h2>Generate a Password</h2>
-           
-            <div class="setting">
-              <label>Password Length</label>
-              <input type="number" id="length" min="8" max="128" value="48" />
-            </div>
-           
-            <div class="setting">
-              <label>Uppercase Letters</label>
-              <input type="checkbox" id="uppercase" checked />
-            </div>
-           
-            <div class="setting">
-              <label>Lowercase Letters</label>
-              <input type="checkbox" id="lowercase" checked />
-            </div>
-           
-            <div class="setting">
-              <label>Numbers</label>
-              <input type="checkbox" id="numbers" checked />
-            </div>
-           
-            <div class="setting">
-              <label>Symbols</label>
-              <input type="checkbox" id="symbols" checked />
-            </div>
-          </div>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+  <title>Random Password Generator</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
 
-          <!-- End selection criteria area -->
+<body>
 
-          <!-- Beginning of generated password area -->
-          
-          <div class="card-body">
-            <textarea
-              id="result"
-              placeholder="Your Password"
-              aria-label="Generated Password"
-            ></textarea>
 
+  <!-- This chunk of the body will encompass the majority of the generator selection criteria aesthetic -->
+
+  <div class="wrapper">
+    <header>
+      <h1>Password Generator</h1>
+    </header>
+    <div class="card">
+      <div class="card-header">
+        <h2>Generate a Password</h2>
+
+        <div class="setting">
+          <label>Password Length</label>
+          <input type="number" id="length" min="8" max="128" value="48" />
         </div>
-        <div class="card-footer">
-          <button id="generate" class="btn">Generate Password</button>
+
+        <div class="setting">
+          <label>Uppercase Letters</label>
+          <input type="checkbox" id="uppercase" checked />
+        </div>
+
+        <div class="setting">
+          <label>Lowercase Letters</label>
+          <input type="checkbox" id="lowercase" checked />
+        </div>
+
+        <div class="setting">
+          <label>Numbers</label>
+          <input type="checkbox" id="numbers" checked />
+        </div>
+
+        <div class="setting">
+          <label>Symbols</label>
+          <input type="checkbox" id="symbols" checked />
         </div>
       </div>
+
+      <!-- End selection criteria area -->
+
+      <!-- Beginning of generated password area -->
+
+      <div class="card-body">
+        <textarea id="result" placeholder="Your Password" aria-label="Generated Password"></textarea>
+
+      </div>
+      <div class="card-footer">
+        <button id="generate" class="btn">Generate Password</button>
+      </div>
     </div>
+  </div>
 
-        <!-- End password area -->
+  <!-- End password area -->
 
-    <script src="script.js"></script>
-  </body>
+  <script src="script.js"></script>
+</body>
+
 </html>
-
-
